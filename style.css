@@ -139,17 +139,14 @@
 
 .slogan {
   position: absolute;
-  left: 3.36%;
-  right: 59.86%;
-  top: 8.93%;
-  bottom: 89.09%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 39px;
   letter-spacing: -0.01em;
   color: #000000;
+  white-space: nowrap;
 }
 
 .btn.primary-color.btn-round {
@@ -498,7 +495,7 @@
   background-color: white; 
   border-radius: 100%;
   margin-right: 5px; 
-  background-image: url('/images/tooth.png'); 
+  background-image: url('images/tooth.png'); 
   background-size: cover;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 
