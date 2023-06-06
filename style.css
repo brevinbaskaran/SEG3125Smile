@@ -498,7 +498,7 @@
   background-color: white; 
   border-radius: 100%;
   margin-right: 5px; 
-  background-image: url('/images/tooth.png'); 
+  background-image: url('images/tooth.png'); 
   background-size: cover;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 
