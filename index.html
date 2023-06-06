@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Smile Dental</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="script.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+ 
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="logo">Smile Dental</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="call-us">Call Us - 647
+          987 5678</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link home" href="#main-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link home" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link services" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link team" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link reservation" href="#booking">
+              Reservation
+            </a>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="main-section">
+    <div class="background-overlay"></div>
+    <div class="container">
+      <div class="title">SMILE DENTAL</div>
+      <div class="slogan">A dental team committed to oral health</div>
+    </div>
+    <div class="container button-container">
+      <button class="btn primary-color btn-round" onclick="navigateToSection('booking')">
+        <span class="btn-text">BOOK APPOINTMENT</span>
+      </button>
+    </div>
+  </section>
+  <br>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/about-us.jpg" alt="Smile Dental" class="about-image">
+        </div>
+        <div class="col-md-6">
+          <div class="about-content">
+            <h2>Our dentists adopt a personalized approach to ensure that each person receives individualized care.</h2>
+            <p>At Smile Dental, we truly believe that going to the dentist shouldn't be a stressful experience. Whether
+              you're a nervous patient in Ottawa or require extensive dental work, our team is up for any challenge when
+              it comes to your oral health. Our goal is to help you maintain healthy teeth for many years to come, and
+              we're committed to making that happen.</p>
+            <a class="btn btn-primary" href="#team">Learn About the Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="services">
+    <div class="container">
+      <div class="services-intro">
+        <h3 class="service-card-title">
+          <span class="first-word">Our</span>
+          <span class="second-word">Services</span>
+        </h3>
+        <p class="services-description">Say goodbye to dental anxiety with our sedation dentistry - Our gentle sedation
+          techniques ensure a comfortable and stress-free experience for even the most nervous patients.</p>
+      </div>
+      <div class="service-card-container">
+        <div class="col-md-2">
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-icon">
+                <span class="teeth-icon"></span>
+                <span class="service-text">Emergency Care</span>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <p class="service-card-description">Need emergency dental care? Our team is here to provide immediate
+                attention and care to help relieve pain, manage bleeding, and prevent further damage. </p>
+              <p class="service-card-pricing">$1500 - $2500 / tooth</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-icon">
+                <span class="teeth-icon"></span>
+                <span class="service-text">Cancer Care</span>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <p class="service-card-description">Undergoing cancer treatment? Prioritize oral health with compassionate
+                care. We work with patients & healthcare providers to develop personalized plans.</p>
+              <p class="service-card-pricing">$2500 / tooth</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-icon">
+                <span class="teeth-icon"></span>
+                <span class="service-text">Orthodontic Care</span>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <p class="service-card-description">Transform your smile with personalized orthodontic care. Our team
+                offers braces and clear aligners to boost your confidence and oral health. Achieve the smile you want!
+              </p>
+              <p class="service-card-pricing">$6000 braces</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-icon">
+                <span class="teeth-icon"></span>
+                <span class="service-text">Oral Surgery</span>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <p class="service-card-description">Looking for oral surgery options? Our experienced team offers
+                compassionate care for wisdom teeth removal, dental implants, and more. Trust us for a healthy smile!
+              </p>
+              <p class="service-card-pricing">$3000 / tooth</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-icon">
+                <span class="teeth-icon"></span>
+                <span class="service-text">Preventative Care</span>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <p class="service-card-description">Preventive dental care is the key to maintaining a healthy smile.
+                Regular checkups, cleanings, and fluoride treatments help prevent dental problems. Let our family help
+                yours!</p>
+              <p class="service-card-pricing">$80 / hour</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <div class="team-intro">
+        <h2 class="team-title">Meet Our <span>Team</span></h2>
+
+        <div class="talent-title">
+          <span class="talent-line">Some of our</span>
+          <span class="talent-line">Talent</span>
+        </div>
+        <div class="eclipse-frame">
+          <div class="eclipse-circle">
+            <div class="eclipse-content">
+              <div class="eclipse-text">
+                <div class="text-row">
+                  <img src="images/listen.png" alt="We Listen" style="width: 24px; height: 24px;"> WE LISTEN
+                </div>
+                <div class="text-row">
+                  <img src="images/education.png" alt="We Educate" style="width: 24px; height: 24px;"> WE EDUCATE
+                </div>
+                <div class="text-row">
+                  <img src="images/provide.png" alt="We Provide" style="width: 24px; height: 24px;"> WE PROVIDE
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="team-card-container">
+        <div class="team-card">
+          <div class="team-card-body">
+            <div class="team-member-info">
+              <div class="team-member-details">
+                <p class="team-card-description">Meet Dr. David Kim - our cosmetic dentistry specialist with over 10
+                  years of experience creating beautiful, natural-looking smiles with procedures like teeth whitening,
+                  veneers, and orthodontics.</p>
+                <h3 class="team-card-name">
+                  <img class="contact-circle" src="images/david-kim.png" alt="David Kim" data-link="john_doe_link">
+                  Dr. David Kim
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card-body">
+            <div class="team-member-info">
+              <div class="team-member-details">
+                <p class="team-card-description">Dr. Julie Davis specializes in emergency dental care, providing prompt
+                  and compassionate treatment to patients in urgent need. Trust her expertise to help you find relief
+                  from pain.</p>
+                <h3 class="team-card-name">
+                  <img class="contact-circle" src="images/julie-davis.png" alt="Jane Smith" data-link="jane_smith_link">
+                  Dr. Julie Davis
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card-body">
+            <div class="team-member-info">
+              <div class="team-member-details">
+                <p class="team-card-description">Meet Dr. San Gupta, our expert oral surgeon specializing in tooth
+                  extractions, dental implants, and corrective jaw surgery. Trust him for compassionate care and
+                  personalized treatment plans.</p>
+                <h3 class="team-card-name">
+                  <img class="contact-circle" src="images/sanjay-gupta.png" alt="San Gupta" data-link="mark_johnson_link">
+                  Dr. San Gupta
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card-body">
+            <div class="team-member-info">
+              <div class="team-member-details">
+                <p class="team-card-description">Dr. Selina Maz is a dental specialist with expertise in cancer care
+                  dentistry. Her surgical procedures include Oral Oncologic Surgery, which removes tumors from the mouth
+                  and jaw.</p>
+                <h3 class="team-card-name">
+                  <img class="contact-circle" src="images/selena-maz.webp" alt="Sarah Maz" data-link="sarah_davis_link">
+                  Dr. Selena Maz
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section id="contact" class="contact">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>WE ARE ALWAYS HERE TO HELP .....</h2>
+      <p class="sub-title">OTTAWA - THE NATION'S CAPITAL</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <iframe style="border:0; width: 100%; height: 520px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-item address-email" data-aos="fade" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p>123 Nepean St North</p>
+                <p>K7C 1F5</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-item address-email" data-aos="fade" data-aos-delay="300">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>smiledental@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-item phone-number" data-aos="fade" data-aos-delay="400">
+                <i class="bi bi-telephone"></i>
+                <h3>Phone Number</h3>
+                <p>General Inquiries: 647 987 5678</p>
+                <br>
+                <p>Emergency Care: 905 879 2145</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-item business-hours" data-aos="fade" data-aos-delay="400">
+                <i class="bi bi-calendar-week"></i>
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8:00am - 6:00pm</p>
+                <p style="margin-top: 10px;">Saturday: 9:00am - 4:00pm</p>
+                <p style="margin-top: 10px;">Sunday: 9:00am - 5:00pm</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="mt-5">
+
+    <h2 class="booking-title">Make An <span>Appointment</span></h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form id="bookingForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name*</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email*</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" class="form-control" id="age" name="age" min="1" max="120">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number*</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group custom-dropdown">
+            <label for="service" class="form-label">Service*</label>
+            <select class="form-select" id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="service1">Cancer Care</option>
+              <option value="service2">Orthodontic Care</option>
+              <option value="service3">Oral Surgery</option>
+              <option value="service4">Preventative Surgery</option>
+
+            </select>
+          </div>
+
+          <div class="form-group custom-dropdown">
+            <label for="expert" class="form-label">Service Expert*</label>
+            <select class="form-select" id="expert" name="expert" required>
+              <option value="">Select an expert</option>
+              <option value="expert1">Dr. David Kim</option>
+              <option value="expert2">Dr. Julie Davis</option>
+              <option value="expert3">Dr. San Gupta</option>
+              <option value="expert4">Dr. Selena Maz</option>
+
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date" class="form-label">Date*</label>
+            <input type="date" class="form-control" id="date" name="date" required min="2023-06-01">
+          </div>
+          <div class="form-group">
+            <label for="time" class="form-label">Time*</label>
+            <div class="time-input-wrapper">
+              <input type="time" class="form-control" id="time" name="time" required min="08:00" max="18:00">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary custom-button">BOOK APPOINTMENT</button>
+        </div>
+      </div>
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <br>
+  <div class="test-container">
+    <div class="testimonials-info">
+      <h2 class="testimonials-title">Testimonials</h2>
+      <img src="images/testimonial.jpeg" alt="Testimonial Image" class="testimonials-image">
+    </div>
+    <div class="carousel-container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-wrapper">
+              <div class="testimonial">"I am thrilled with the orthodontic care I received from Dr. David and his team!
+                From the moment I walked in, I felt welcomed and at ease. The staff is friendly, professional, and
+                knowledgeable. Dr. David expertise resulted in a beautiful, straight smile that has changed my life. I
+                highly recommend Dr. David for outstanding orthodontic care!"</div>
+              <br><br>
+              <div class="media">
+                <img src="images/testimonial-1.png" alt="" class="testimonial-image">
+                <div class="media-body">
+                  <div class="overview">
+                    <div class="name"><b>John Clifford</b></div>
+                    <div class="details">Orthodontic Care</div>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-wrapper">
+              <div class="testimonial">"Words cannot express my gratitude for the exceptional emergency care I received
+                at Dr. Julie. From the moment I called, her team acted swiftly and showed unmatched professionalism and
+                compassion. Dr. Julie and their staff skillfully alleviated my pain and restored my dental health. Their
+                state-of-the-art facilities and personalized advice left me empowered to maintain oral health. I am
+                truly grateful for their prompt, skillful, and compassionate care."</div>
+              <br>
+              <div class="media">
+                <img src="images/testimonial-3.jpeg" alt="" class="testimonial-image">
+                <div class="media-body">
+                  <div class="overview">
+                    <div class="name"><b>Jane Doe</b></div>
+                    <div class="details">Emergency Care</div>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-wrapper">
+              <div class="testimonial">"Dr. Selena, the dentist, is a true gem for cancer patients. From the first
+                visit, I knew I had found a compassionate professional who understood my needs. Selena's expertise in
+                cancer care dentistry, coupled with her genuine care, made me feel safe and comfortable during my
+                treatment. I'm grateful to have found Selena, a dentist who goes above and beyond to provide exceptional
+                care."</div>
+              <br>
+              <div class="media">
+                <img src="/images/testimonial-2.png" alt="" class="testimonial-image">
+                <div class="media-body">
+                  <div class="overview">
+                    <div class="name"><b>Lotus Johnson</b></div>
+                    <div class="details">Recovering Cancer Patient</div>
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="footer-title">Patient Information</a></h5>
+          <ul class="footer-list">
+            <li><a href="#about" class="team-link">About Us</a></li>
+            <li><a href="#team" class="team-link">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer-title"><a href="#services" class="footer-link">Services</a></h5>
+          <ul class="footer-list">
+            <li>Emergency Care</li>
+            <li>Cancer Care</li>
+            <li>Orthodontic Care</li>
+            <li>Oral Surgery</li>
+            <li>Preventative Care</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer-title">Contact Us</h5>
+          <p class="footer-address">123 Nepean Street <br> Ottawa, ON, K7C 1F5</p>
+          <p class="footer-phone"><i class="bi bi-telephone"></i> (647) 987-5678</p>
+          <p class="footer-email"><i class="bi bi-envelope"></i> smiledental@gmail.com</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer-title">Follow Us</h5>
+          <br>
+          <div class="social-media-icons d-flex justify-content-between">
+            <a href="https://facebook.com"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="https://twitter.com/"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="https://www.linkedin.com/"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
