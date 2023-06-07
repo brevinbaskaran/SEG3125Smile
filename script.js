@@ -25,6 +25,10 @@ $(document).ready(function () {
       $('.custom-button').addClass('blurred');
     } else {
       $('.custom-button').removeClass('blurred');
+      button.addEventListener('click', function () {
+        // Navigate to the desired page
+        window.location.href = 'confirmation.html';
+      });
     }
   });
 
