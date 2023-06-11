@@ -24,8 +24,23 @@ $(document).ready(function () {
   // Handle form submission
   $('#bookingForm').on('submit', function (event) {
     if (this.checkValidity()) {
-      // Form is valid, redirect to confirmation page
+      // Form is valid so  get the data and redirect 
       event.preventDefault();
+
+      // Capture form data
+      var bookingData = {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        service: $('#service').val(),
+        expert: $('#expert').val(),
+        date: $('#date').val(),
+        time: $('#time').val(),
+        bookId: generateBookId().toString(), 
+        phone: $('#phone').val()
+      };
+
+      // Store booking data 
+      localStorage.setItem('bookingData', JSON.stringify(bookingData));
 
       window.location.href = 'confirmation.html';
     } else {
@@ -34,6 +49,12 @@ $(document).ready(function () {
     }
   });
 });
+
+// Generate a random 9-digit booking ID
+function generateBookId() {
+  return Math.floor(Math.random() * (999999999 - 100000000 + 1)) + 100000000;
+}
+
 
 
 // book another appointment button element
@@ -44,22 +65,32 @@ bookAnotherBtn.addEventListener('click', function () {
   window.location.href = 'index.html';
 });
 
-// Get the cancel appointment button element
+// Gets the cancel appointment button element
 var cancelAppointmentBtn = document.getElementById('cancel-appointment');
-// Add event listener for button click
+
 cancelAppointmentBtn.addEventListener('click', function () {
   // Show a confirmation dialog
   var result = confirm('Are you sure you want to cancel this appointment?');
   if (result) {
-    // User clicked 'Yes' THEN perform cancellation 
+    //perform cancellation 
     window.location.href = 'index.html';
     alert('Appointment cancelled successfully!');
   } else {
-    // If User clicked 'No' or closed dialog, NOTHING HAPPENS
+    // If User clicked 'No' nothing should happen
   }
 });
 
-function navigateToSection(sectionId) {
-  var section = document.getElementById(sectionId);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
+// Retrieve captured data 
+document.addEventListener('DOMContentLoaded', function () {
+  var bookingData = JSON.parse(localStorage.getItem('bookingData'));
+
+  // Display the data on the page
+  document.getElementById('name').textContent = bookingData.name;
+  document.getElementById('email').textContent = bookingData.email;
+  document.getElementById('service-type').textContent = bookingData.service;
+  document.getElementById('service-expert').textContent = bookingData.expert;
+  document.getElementById('phone').textContent = bookingData.phone;
+  document.getElementById('date').textContent = bookingData.date;
+  document.getElementById('time').textContent = bookingData.time;
+  document.getElementById('book-id').textContent = bookingData.bookId;
+});
